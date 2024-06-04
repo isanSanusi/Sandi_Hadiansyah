@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandi Hadiansyah</title>
     <!-- ? style css internal -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bubble.css" />
+    <link rel="stylesheet" href="assets/css/break_points.css" />
+    <link rel="stylesheet" href="assets/css/hamburger_menu.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- ? external framework start -->
     <link
@@ -22,12 +26,8 @@
     <!-- ? external framework end -->
   </head>
   <body>
-    <section class="container">
-      <div class="content-header">
-        <div class="logo">
-          <img src="./img/logoSans2.jpg" alt="" />
-          <h3>Sandi Hadiansyah</h3>
-        </div>
+    <div class="container">
+      <header class="content-header">
         <div class="menu">
           <a href="#" class="place" id="btnHome">Home</a>
           <a href="#" id="btnSkills">Skill</a>
@@ -40,20 +40,28 @@
           <span></span>
           <span></span>
         </div>
-      </div>
+      </header>
 
-      <div class="container-content">
+      <section class="min-h container-content">
         <div class="body">
           <div class="img">
-            <img src="./img/logoSans3.jpg" alt="" />
+            <div class="img-content">
+              <img src="assets/img/sans0439.png" alt="" />
+              <h1>SANDI HADIANSYAH</h1>
+              <a href="#" aria-label="skill" class="bubble _1"> </a>
+              <a href="#" aria-label="project" class="bubble _2"> </a>
+              <a href="#" aria-label="about" class="bubble _3"> </a>
+              <a href="#" aria-label="home" class="bubble _4"> </a>
+              <a href="#" aria-label="contact" class="bubble _5"> </a>
+              <button class="bubble _btn"></button>
+            </div>
           </div>
-          <div class="title">
+          <div class="part title home slideOn">
             <p>Designer | Web Developer</p>
-            <h2>
-              call me<br />
-              <span>Sans</span><br />
-              without <span>Serif</span>
-            </h2>
+            <h1>
+              call me
+              <span>Sans</span>
+            </h1>
             <p>
               This is my web portfolio, the web where I store files/documents of
               my learning journey in the web developer world from Zero until
@@ -61,33 +69,170 @@
               <br />
               happy exploring.
             </p>
+            <div class="socials">
+              <a
+                href="https://api.whatsapp.com/send?phone=6289626581234&text=assalamualaikum%20warahmatullahi%20wabarakatuh"
+              >
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=100012068161646">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com/insane_isan/">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+              </a>
+            </div>
             <div class="btn">
-              <div class="btn1">
-                <button>Download CV</button>
-              </div>
-              <div class="btn1">
-                <button>Contact me</button>
-              </div>
+              <button>Download CV</button>
+              <button>Contact me</button>
             </div>
           </div>
+          <div class="part about">
+            <h2>About me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              neque animi accusamus vero, repellat eos architecto culpa eum in
+              perferendis optio libero quia deserunt, quaerat enim quo ea
+              reprehenderit illum.
+            </p>
+          </div>
+          <div class="part contact">
+            <h2>Contact me</h2>
+            <div class="form-contact">
+              <form action="submit">
+                <div class="input-group">
+                  <!-- <label for="name">name</label> -->
+                  <input type="text" id="name" placeholder="Jhon Doe" />
+                </div>
+                <div class="input-group">
+                  <!-- <label for="email">email</label> -->
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+                <div class="input-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Hi, I Love You"
+                  ></textarea>
+                </div>
+                <button type="submit">send message</button>
+              </form>
+            </div>
+          </div>
+          <div class="part project">
+            <h2>My Project</h2>
+            <div class="swiper">
+              <div class="card-content">
+                <div class="swiper-wrapper">
+                  <article class="card-article swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/img/chart.png" alt="cart" />
+                      <div class="image-shadow"></div>
+                    </div>
+                    <div class="card-data">
+                      <h3>Cart Shop</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut, unde!
+                      </p>
+                      <a href="#" class="card-button">view more</a>
+                    </div>
+                  </article>
+
+                  <article class="card-article swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/img/coffe.png" alt="cart" />
+                      <div class="image-shadow"></div>
+                    </div>
+                    <div class="card-data">
+                      <h3>Cofee Shop</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut, unde!
+                      </p>
+                      <a href="#" class="card-button">view more</a>
+                    </div>
+                  </article>
+
+                  <article class="card-article swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/img/haninfc.png" alt="cart" />
+                      <div class="image-shadow"></div>
+                    </div>
+                    <div class="card-data">
+                      <h3>Fried Chiken</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut, unde!
+                      </p>
+                      <a href="#" class="card-button">view more</a>
+                    </div>
+                  </article>
+
+                  <article class="card-article swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/img/pop.png" alt="cart" />
+                      <div class="image-shadow"></div>
+                    </div>
+                    <div class="card-data">
+                      <h3>POP Ice</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut, unde!
+                      </p>
+                      <a href="#" class="card-button">view more</a>
+                    </div>
+                  </article>
+
+                  <article class="card-article swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/img/pedia.png" alt="cart" />
+                      <div class="image-shadow"></div>
+                    </div>
+                    <div class="card-data">
+                      <h3>Sans Pedia</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut, unde!
+                      </p>
+                      <a href="#" class="card-button">view more</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="part skill">
+            <h2>My Skill</h2>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- ? ini adalah skill start -->
-      <section class="skills hide" id="skill">
+      <section class="min-h skills hide" id="skill">
         <h2>What I Do</h2>
         <div class="skill-content">
           <div class="skill CorelDraw">
-            <h4>CorelDraw</h4>
-            <p>
+            <h4 class="">CorelDraw</h4>
+            <p class="">
               Tools Desain grafis yang menurut saya bersahabat dengan saya,
               Semua pembuatan Logo, Flyer, Mockup dan banyak lagi tentang
               vector, saya selesaikan bersama nya
             </p>
           </div>
           <div class="skill photoshop">
-            <h4>Photoshop</h4>
-            <p>
+            <h4 class="">Photoshop</h4>
+            <p class="">
               Sebuah tantangan baru buat saya, Tools yang memudahkan saya
               membuat Manipulasi gambar/foto, ilustrasi , remove object dan
               lainnya. saya bukanlah ahli di Tools ini , namun saya slalu
@@ -96,8 +241,8 @@
           </div>
 
           <div class="skill JavaScript">
-            <h4>JavaScript</h4>
-            <p>
+            <h4 class="">JavaScript</h4>
+            <p class="">
               Teknologi pertama yang saya pelajari dan terus saya pelajari
               sampai hari ini. tak banyak library atau framework yang saya
               kuasai mengenai Teknologi ini, namun saya terus mengembangkan
@@ -106,8 +251,8 @@
           </div>
 
           <div class="skill DoSomething">
-            <h4>Do everything</h4>
-            <p>
+            <h4 class="">Do everything</h4>
+            <p class="">
               Saya menyukai tantangan dan hal baru , Saya akan terus belajar dan
               mempelajari apapun yang membuat saya penasaran dan saya akan
               serius di dalam nya, sampai skill saya bisa untuk memberi
@@ -118,13 +263,13 @@
       </section>
 
       <!-- ? ini adalah porto start -->
-      <section class="porto hide" id="porto">
+      <section class="min-h porto hide" id="porto">
         <h2>My Journey</h2>
         <div class="porto-content">
           <div class="card">
             <div class="face face1">
               <div class="content 1">
-                <img src="./img/chart.png" />
+                <img src="assets/img/chart.png" />
               </div>
             </div>
             <div class="face face2">
@@ -136,7 +281,7 @@
           <div class="card">
             <div class="face face1">
               <div class="content 1">
-                <img src="./img/coffe.png" />
+                <img src="assets/img/coffe.png" />
               </div>
             </div>
             <div class="face face2">
@@ -148,7 +293,7 @@
           <div class="card">
             <div class="face face1">
               <div class="content 1">
-                <img src="./img/haninfc.png" />
+                <img src="assets/img/haninfc.png" />
               </div>
             </div>
             <div class="face face2">
@@ -160,7 +305,7 @@
           <div class="card">
             <div class="face face1">
               <div class="content 1">
-                <img src="./img/pop.png" />
+                <img src="assets/img/pop.png" />
               </div>
             </div>
             <div class="face face2">
@@ -172,7 +317,7 @@
           <div class="card">
             <div class="face face1">
               <div class="content 1">
-                <img src="./img/pedia.png" />
+                <img src="assets/img/pedia.png" />
               </div>
             </div>
             <div class="face face2">
@@ -184,29 +329,9 @@
         </div>
       </section>
       <!-- ? ini adalah porto end -->
+    </div>
 
-      <!-- ? ini adalah footer start -->
-      <footer>
-        <div class="socials">
-          <a
-            href="https://api.whatsapp.com/send?phone=6289626581234&text=assalamualaikum%20warahmatullahi%20wabarakatuh"
-          >
-            <i class="fa-brands fa-whatsapp fa-2x"></i>
-          </a>
-          <a href="https://web.facebook.com/profile.php?id=100012068161646">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.instagram.com/insane_isan/">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
-        </div>
-        <div class="credit">
-          <p>&copy;2023 <a href="#">Sandi Hadiansyah</a>.</p>
-        </div>
-      </footer>
-      <!-- ? ini adlah footer end -->
-    </section>
-
-    <script src="data.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
   </body>
 </html>
